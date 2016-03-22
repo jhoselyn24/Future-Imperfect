@@ -1,6 +1,7 @@
 $gray:#4A4949;
 $silver:#F4F4F4;
 $black:black;
+$color: #EBEBEB;
 
 body {
 	font-family: Helvetica, sans-serif;
@@ -74,7 +75,7 @@ body {
         }
    
     }
-    .tres {
+    .img {
         width: 100px;
         height: 150px;
         margin: 0 0 0 20px;
@@ -104,11 +105,12 @@ body {
 .post {
 	.container {
 		background-color: white;
+		margin-bottom: 50px;
 	}
 	.box-text {
 		padding: 6% 4% 3%;
         min-height: 147px;
-        border: 1px solid #EBEBEB;
+        border: 1px solid $color;
 
 
 		h3, p{
@@ -116,23 +118,72 @@ body {
             color: $gray;
         }
 		a {
-			border-bottom: 1px dotted silver;
+			border-bottom: 1px dotted $silver;
 			color: $gray;
 			transition: 1s;
 			&:hover {
-				color: silver;
+				color: $silver;
 				text-decoration: none;
 			}
 		}
 	}
 	.box-img {
-		padding: 7% 3% 4.2%;
+		padding: 7% 3% 4.1%;
         text-align: center;
         border-left: none;
         min-height: 147px;
+        img {
+        	border-radius: 100%;
+        }
 	}
 	.box-pic {
 		padding: 5% 4%;
+		border-right: 1px solid $color;
+		border-bottom: 1px solid $color;
+		border-left: 1px solid $color;
+		img {
+			width: 100%;
+		}
+		p {
+			color: $gray;
+			margin: 5% 0;
+            font-size: 18px;
+            line-height: 1.7;
+		}
+		a {
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			padding: 20px 35px;
+			border: 1px solid $color;
+			color: $gray;
+			transition: 1s;
+			text-decoration: none;
+			font-size: 0.8em;
+            font-weight: 900; 
+			&:hover {
+				color:green;
+				border-color:green;
+			}
+		}
+		span {
+			float: right;
+			.text {
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				color: $gray;
+				font-style: normal;
+				margin: 5px;
+				font-size: 0.8em;
+			}
+		}
+		.general {
+			@extend .style-text;
+			font-size: 0.8em;
+			color: $gray;
+			border-bottom: 1px dotted $silver;
+			margin: 5px 25px;
+			border-right: 1px solid black;
+		}
 	}
 
 }

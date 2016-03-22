@@ -3,7 +3,7 @@ body {
   background-color: #F4F4F4;
   margin: 0; }
 
-.style-text, .navegador h5, .title-page h1, .post .box-text h3, .post .box-text p {
+.style-text, .navegador h5, .title-page h1, .post .box-text h3, .post .box-text p, .post .box-pic .general {
   letter-spacing: 5px;
   text-transform: uppercase; }
 
@@ -59,7 +59,7 @@ body {
       -o-transform: rotate(-60deg);
       transform: rotate(-60deg);
       background-size: 117%; }
-.title-page .tres {
+.title-page .img {
   width: 100px;
   height: 150px;
   margin: 0 0 0 20px;
@@ -80,7 +80,8 @@ body {
     border-bottom: 1px dotted silver; }
 
 .post .container {
-  background-color: white; }
+  background-color: white;
+  margin-bottom: 50px; }
 .post .box-text {
   padding: 6% 4% 3%;
   min-height: 147px;
@@ -88,18 +89,58 @@ body {
   .post .box-text h3, .post .box-text p {
     color: #4A4949; }
   .post .box-text a {
-    border-bottom: 1px dotted silver;
+    border-bottom: 1px dotted #F4F4F4;
     color: #4A4949;
     transition: 1s; }
     .post .box-text a:hover {
-      color: silver;
+      color: #F4F4F4;
       text-decoration: none; }
 .post .box-img {
-  padding: 7% 3% 4.2%;
+  padding: 7% 3% 4.1%;
   text-align: center;
   border-left: none;
   min-height: 147px; }
+  .post .box-img img {
+    border-radius: 100%; }
 .post .box-pic {
-  padding: 5% 4%; }
+  padding: 5% 4%;
+  border-right: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 1px solid #EBEBEB; }
+  .post .box-pic img {
+    width: 100%; }
+  .post .box-pic p {
+    color: #4A4949;
+    margin: 5% 0;
+    font-size: 18px;
+    line-height: 1.7; }
+  .post .box-pic a {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border: 1px solid #EBEBEB;
+    color: #4A4949;
+    transition: 1s;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 900; }
+    .post .box-pic a:hover {
+      color: green;
+      border-color: green; }
+  .post .box-pic span {
+    float: right; }
+    .post .box-pic span .text {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #4A4949;
+      font-style: normal;
+      margin: 5px;
+      font-size: 0.8em; }
+  .post .box-pic .general {
+    font-size: 0.8em;
+    color: #4A4949;
+    border-bottom: 1px dotted #F4F4F4;
+    margin: 5px 25px;
+    border-right: 1px solid black; }
 
 /*# sourceMappingURL=main.css.map */
